@@ -1,0 +1,11 @@
+﻿--- 
+heat_template_version: 2014-10-16
+resources: 
+  my_router: 
+    properties: 
+      admin_state_up: true
+      external_gateway_info: 
+        enable_snat: false
+        network: 0a2228f2-7f8a-45f1-8e09-9039e1d09975
+      name: myFirstRoute
+    type: "OS::Neutron::Router"
